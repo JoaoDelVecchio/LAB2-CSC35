@@ -27,9 +27,6 @@ void tserver(int sa) {
         buf[BUF_SIZE-1] = '\0'; // prevent buffer overflow
         buf[bytes] = '\0';
 
-
-        printf("%s \n", buf);
-
         if (strncmp(buf, "MyGet ", 6) == 0) {
             last_access = time(0);
             has_last_access = true;
