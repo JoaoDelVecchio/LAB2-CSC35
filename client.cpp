@@ -47,7 +47,7 @@ int main(int argc, char **argv)
     c = connect(s, (struct sockaddr *)&channel, sizeof(channel));
     if (c < 0)
     {
-        perror("Falhou a conexao");
+        perror("falhou a conexao");
         exit(1);
     }
 
